@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:50b5bde5954c4b9a0ceedf753c01b851b1de778fd91c562664bb5b1f5afa063a
-size 128
+#Personal Chat Moderation System
+
+#Project Overview
+This is a comprehensive chat moderation system designed to analyze and filter inappropriate content using machine learning techniques.
+System Requirements
+
+Python 3.8+
+Required Python Packages:
+
+flask
+transformers
+torch
+pandas
+scikit-learn
+sqlite3
+flask-cors
+
+#Project Structure
+#Core Application Files
+
+run.py: Main entry point to start the Flask application
+config.py: Configuration management for the application
+app/__init__.py: Flask application initialization
+
+#Moderation Components
+
+app/main.py: Core application logic and server configuration
+app/routes.py: API endpoints for content moderation
+app/models.py: Database models and machine learning model definitions
+app/database.py: Database connection and interaction methods
+app/utils.py: Utility functions for text processing and analysis
+
+#Machine Learning
+
+app/train_jigsaw_model.py: Model training script for text classification
+app/testing.py: Model testing and evaluation script
+app/templates/jigsaw_results/: Contains model checkpoints and visualization results
+
+#Frontend
+
+app/templates/frontend.html: Web interface for the moderation system
+app/style.css: Styling for the web interface
+
+Performance Metrics
+The PERFORMANCE METRICS/ directory contains:
+
+Confusion matrices for different classification types
+ROC curves
+Classification metrics
+Latency analysis visualizations
